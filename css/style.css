@@ -1,110 +1,189 @@
-.main_block{
-  width: 300px;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  opacity: .7;
-  background-color: black;
-  padding: 3px;
-  color: white;
+.main_block {
+    width: 300px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    opacity: .7;
+    background-color: black;
+    padding: 3px;
+    color: white;
 }
 
-.nav-pills{
-  font-size: 1.5em;
-  background-color: black;
+.nav-pills {
+    font-size: 1.5em;
+    background-color: black;
 }
 
-.nav-pills > li > a:hover{
-  background-color: black;
-  color: grey;
+.nav-pills>li>a:hover {
+    background-color: black;
+    color: grey;
 }
 
-.nav-pills > li > a:focus{
-  background-color: black;
-  color: grey;
+.nav-pills>li>a:focus {
+    background-color: black;
+    color: grey;
 }
 
-#projects{
-  color:white;
+#projects {
+    color: white;
 }
 
-#traveler{
-  padding-right: 3%;
-  padding-top: 125px;
-  padding-bottom: 175px;
+#traveler {
+    padding-right: 3%;
+    padding-top: 125px;
+    padding-bottom: 175px;
 }
 
 #coder {
-  padding-left: 3%;
-  padding-top: 125px;
-  padding-bottom: 175px;
+    padding-left: 3%;
+    padding-top: 125px;
+    padding-bottom: 175px;
+    overflow: hidden;
+    position: relative;
+}
+
+.coderOverlay {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    margin-left: 2px;
+}
+
+.coderOverlay h2 {
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    font-size: 30px;
+    padding: 20px;
+    background: #000;
+    margin: 50px 0 0 0;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.coderOverlay p {
+    font-size: 25px;
+    position: relative;
+    color: black;
+    transform: translateY(100px);
+    opacity: 0;
+    padding: 5px;
+    transition: all 0.2s linear;
+    width: 100%;
+}
+
+#lastP {
+    margin-bottom: 0px;
+}
+
+.coderOverlay a.findOutMore {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 30px;
+    background: #000;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    opacity: 0;
+    transition: all 0.2 ease-in-out;
+}
+
+#accordion .ui-state-focus {
+    outline: none;
+}
+
+.coderOverlay a.findOutMore:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+#coder:hover .coderOverlay {
+    opacity: 1;
+}
+
+.coderOverlay:hover h2, .coderOverlay:hover p, .coderOverlay:hover a.findOutMore {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.coderOverlay:hover li {
+    transition-delay: 0.1s;
+}
+
+.coderOverlay:hover a.findOutMore {
+    transition-delay: 0.2s;
 }
 
 #me {
-  padding-top: 25px;
+    padding-top: 25px;
 }
 
-p{
-  font-size: 2em;
-  color: black;
+p {
+    font-size: 2em;
+    color: black;
 }
 
-hr.style1{
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  width: 65%;
+hr.style1 {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    width: 65%;
 }
 
-hr.style2{
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  width: 75%;
+hr.style2 {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    width: 75%;
 }
 
-a{
-  color: white;
+a {
+    color: white;
 }
 
-a:hover, a:focus{
-  color: grey;
+a:hover, a:focus {
+    color: grey;
 }
 
-.pageOne{
-  background:url("https://images.unsplash.com/photo-1473163928189-364b2c4e1135");
-  background-size: cover;
-  padding-bottom: 3%;
-  /* Prevents overflow of elements and fixes the height in smaller windows!! */
-  min-height: 1%; 
-  overflow: hidden;
+.pageOne {
+    background: url("https://images.unsplash.com/photo-1473163928189-364b2c4e1135");
+    background-size: cover;
+    padding-bottom: 3%;
+    /* Prevents overflow of elements and fixes the height in smaller windows!! */
+    min-height: 1%;
+    overflow: hidden;
 }
 
-.pageTwo{
-  background:url("https://images.unsplash.com/uploads/14122490187939c23049f/82e2ae94");
-  background-size: cover;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  /* Prevents overflow of elements and fixes the height in smaller windows!! */
-  min-height: 1%;
-  overflow: hidden;
-  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 1);
+.pageTwo {
+    background: url("https://images.unsplash.com/uploads/14122490187939c23049f/82e2ae94");
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* Prevents overflow of elements and fixes the height in smaller windows!! */
+    min-height: 1%;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
-.pageThree{
-  background:url("https://images.unsplash.com/photo-1454165205744-3b78555e5572");
-  background-size: cover;
-  padding-top: 2%;
-  padding-bottom: 5%;
-  /* Prevents overflow of elements and fixes the height in smaller windows!! */
-  min-height: 1%;
-  overflow: hidden;
+.pageThree {
+    background: url("https://images.unsplash.com/photo-1454165205744-3b78555e5572");
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    /* Prevents overflow of elements and fixes the height in smaller windows!! */
+    min-height: 1%;
+    overflow: hidden;
 }
