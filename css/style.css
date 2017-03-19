@@ -1,299 +1,293 @@
 .main_block {
-  width: 300px;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  opacity: .7;
-  background-color: black;
-  padding: 3px;
-  color: white;
+    width: 300px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    opacity: .7;
+    background-color: black;
+    padding: 3px;
+    color: white;
 }
 
 .nav-pills {
-  font-size: 1.5em;
-  background-color: black;
+    font-size: 1.5em;
+    background-color: black;
 }
 
-.nav-pills > li > a:hover {
-  background-color: black;
-  color: grey;
+.nav-pills>li>a:hover {
+    background-color: black;
+    color: grey;
 }
 
-.nav-pills > li > a:focus {
-  background-color: black;
-  color: grey;
+.nav-pills>li>a:focus {
+    background-color: black;
+    color: grey;
 }
 
 #projects {
-  color: white;
+    color: white;
 }
 
 #traveler {
-  padding-right: 3%;
-  padding-top: 125px;
-  padding-bottom: 175px;
-  overflow: hidden;
-  position: relative;
+    padding-right: 3%;
+    padding-top: 125px;
+    padding-bottom: 175px;
+    overflow: hidden;
+    position: relative;
 }
 
 #coder {
-  padding-left: 3%;
-  padding-top: 125px;
-  padding-bottom: 175px;
-  overflow: hidden;
-  position: relative;
+    padding-left: 3%;
+    padding-top: 125px;
+    padding-bottom: 175px;
+    overflow: hidden;
+    position: relative;
 }
 
 .overlay {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-  width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
 }
 
 #coder .overlay {
-  background-color: #fff;
-  margin-left: 2px;
+    background-color: #fff;
+    margin-left: 2px;
 }
 
 #traveler .overlay {
-  margin-right: 2px;
+    margin-right: 2px;
 }
 
 .overlay h2 {
-  text-transform: uppercase;
-  color: #fff;
-  position: relative;
-  font-size: 30px;
-  padding: 20px;
-  background: #000;
-  margin: 50px 0 0 0;
-  transform: translateY(-100px);
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    font-size: 30px;
+    padding: 20px;
+    background: #000;
+    margin: 50px 0 0 0;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 
 .overlay p {
-  font-size: 20px;
-  position: relative;
-  color: black;
-  transform: translateY(100px);
-  opacity: 0;
-  padding: 5px;
-  transition: all 0.2s linear;
-  width: 100%;
+    font-size: 20px;
+    position: relative;
+    color: black;
+    transform: translateY(100px);
+    opacity: 0;
+    padding: 5px;
+    transition: all 0.2s linear;
+    width: 100%;
 }
 
 #coder p:last-of-type {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .overlay a.findOutMore {
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px 15px;
-  margin: 30px;
-  background: #000;
-  text-transform: uppercase;
-  box-shadow: 0 0 1px #000;
-  opacity: 0;
-  transition: all 0.2 ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 30px;
+    background: #000;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    opacity: 0;
+    transition: all 0.2 ease-in-out;
 }
 
 #accordion .ui-state-focus {
-  outline: none;
+    outline: none;
 }
 
 .overlay a.findOutMore:hover {
-  box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
 }
 
 #coder:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 #traveler:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
-#traveler:hover h2,
-#traveler:hover p {
-  opacity: 0;
+#traveler:hover h2, #traveler:hover p {
+    opacity: 0;
 }
 
 #traveler:hover h2:last-of-type {
-  opacity: 1;
+    opacity: 1;
 }
 
-.overlay:hover h2,
-.overlay:hover p,
-.overlay:hover a.findOutMore {
-  opacity: 1;
-  transform: translateY(0px);
+.overlay:hover h2, .overlay:hover p, .overlay:hover a.findOutMore {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .overlay:hover li {
-  transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 
 .overlay:hover a.findOutMore {
-  transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
+
 
 /* Slideshow container */
 
 .slideshow-container {
-  position: relative;
-  margin: auto;
+    position: relative;
+    margin: auto;
 }
 
 .mySlides {
-  display: none;
+    display: none;
 }
 
 
 /* Next & previous buttons */
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
 
 /* Position the "prev button" to the left */
 
 .prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
+    left: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 
 /* Position the "next button" to the right */
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 
 /* On hover, add a black background color with a little bit see-through */
 
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
 /* Caption text */
 
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 
 /* The dots/bullets/indicators */
 
 .dot {
-  cursor: pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
+.active, .dot:hover {
+    background-color: #717171;
 }
 
 #me {
-  padding-top: 25px;
+    padding-top: 25px;
 }
 
 p {
-  font-size: 2em;
-  color: black;
+    font-size: 2em;
+    color: black;
 }
 
 hr.style1 {
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  width: 65%;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    width: 65%;
 }
 
 hr.style2 {
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  width: 75%;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    width: 75%;
 }
 
 a {
-  color: white;
+    color: white;
 }
 
-a:hover,
-a:focus {
-  color: grey;
+a:hover, a:focus {
+    color: grey;
 }
 
 .pageOne {
-  background: url("../img/maps.jpeg");
-  background-size: cover;
-  padding-bottom: 3%;
-  /* Prevents overflow of elements and fixes the height in smaller windows!! */
-  min-height: 1%;
-  overflow: hidden;
+    background: url("../img/maps.jpeg");
+    background-size: cover;
+    padding-bottom: 3%;
+    /* Prevents overflow of elements and fixes the height in smaller windows!! */
+    min-height: 1%;
+    overflow: hidden;
 }
 
 .pageTwo {
-  background: url("../img/inspiration.jpeg");
-  background-size: cover;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  /* Prevents overflow of elements and fixes the height in smaller windows!! */
-  min-height: 1%;
-  overflow: hidden;
-  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 1);
+    background: url("../img/inspiration.jpeg");
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* Prevents overflow of elements and fixes the height in smaller windows!! */
+    min-height: 1%;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
 .pageThree {
-  background: url("../img/coding.jpeg");
-  background-size: cover;
-  padding-top: 2%;
-  padding-bottom: 5%;
-  /* Prevents overflow of elements and fixes the height in smaller windows!! */
-  min-height: 1%;
-  overflow: hidden;
+    background: url("../img/coding.jpeg");
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    /* Prevents overflow of elements and fixes the height in smaller windows!! */
+    min-height: 1%;
+    overflow: hidden;
 }
