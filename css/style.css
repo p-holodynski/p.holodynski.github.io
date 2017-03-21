@@ -263,7 +263,7 @@ a:hover, a:focus {
 }
 
 .pageOne {
-    background: url("../img/maps3.jpg");
+    background: url("../img/maps2.jpg");
     background-size: cover;
     padding-bottom: 3%;
     /* Prevents overflow of elements and fixes the height in smaller windows!! */
