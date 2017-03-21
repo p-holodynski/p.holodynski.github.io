@@ -263,7 +263,7 @@ a:hover, a:focus {
 }
 
 .pageOne {
-    background: url("../img/maps.jpeg");
+    background: url("../img/maps3.jpg");
     background-size: cover;
     padding-bottom: 3%;
     /* Prevents overflow of elements and fixes the height in smaller windows!! */
@@ -272,7 +272,7 @@ a:hover, a:focus {
 }
 
 .pageTwo {
-    background: url("../img/inspiration.jpeg");
+    background: url("../img/inspiration2.jpg");
     background-size: cover;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -283,7 +283,7 @@ a:hover, a:focus {
 }
 
 .pageThree {
-    background: url("../img/coding.jpeg");
+    background: url("../img/coding2.jpg");
     background-size: cover;
     padding-top: 2%;
     padding-bottom: 5%;
